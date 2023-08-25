@@ -4,7 +4,7 @@ import { Astronauta } from './schemas/astronautas.schema';
 import { Model } from 'mongoose';
 
 @Injectable()
-export class AstronautasService {
+export class AstronautasService{
     constructor(
         @InjectModel(Astronauta.name) private astronautaModel: Model<Astronauta>
     ){}
